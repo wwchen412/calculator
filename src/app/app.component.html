@@ -1,7 +1,7 @@
 
 <div class="container">
   <div class="computer">
-    <app-calculator-output ></app-calculator-output>
-    <app-calculator-input></app-calculator-input>
+    <app-calculator-output [exportNum]= "exportNum"></app-calculator-output>
+    <app-calculator-input (click)="doNum($event)"></app-calculator-input>
   </div>
 </div>
