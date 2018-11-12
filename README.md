@@ -1,27 +1,35 @@
-# Ex1
+# 綜合練習 1 - 使用內嵌繫結、屬性繫結、事件繫結完成任務
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.3.
+## 安裝 npm 套件
 
-## Development server
+### npm
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+`npm install`
 
-## Code scaffolding
+### yarn
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+`yarn install`
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## 啟動開發伺服器
 
-## Running unit tests
+`npm start`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+開啟網頁: `http://localhost:4200/`
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## 練習目標
 
-## Further help
+1. 當使用者在網頁右側的關鍵字搜尋輸入文字時，會自動在輸入框​的正下方顯示正在輸入的字元數。
+2. 當使用者在​輸入框​按下 Escape 按鍵時，會自動清空輸入框的值。
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## 限制條件
+
+1. 在進行本作業練習時，不准使用任何 jQuery 的 API 來更動網頁 DOM 內容，只能使用 Angular 的標準資料繫結作法。
+
+
+## 練習提示
+
+1. 可​在網頁右側的關鍵字搜尋輸入框加上 keyup 事件​​
+2. 可在 AppComponent 中新增幾個屬性保存輸入框的內容
