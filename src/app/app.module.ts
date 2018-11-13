@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { CalculatorModule } from './calculator/calculator.module';
+import { ExportNumService } from './calculator/export-num.service';
 
 
 @NgModule({
@@ -16,7 +17,7 @@ import { CalculatorModule } from './calculator/calculator.module';
     AppRoutingModule,
     CalculatorModule
   ],
-  providers: [],
+  providers: [ExportNumService],
   bootstrap: [AppComponent]
 })
 

@@ -2,8 +2,23 @@
   padding: 10px;
   text-align: right;
   h1{
-    display: block;
+    display: flex;
   font-size: 75px;
   font-weight: 100;
+  min-height: 102px;
+  align-items: flex-end;
+  justify-content: flex-end;
+  overflow: hidden;
+  &.maxlength{
+      font-size: 40px;
   }
+  }
+
+}
+.count-export h1{
+  background-color: #dfe7ec;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: inset 0 0 15px rgba(57, 75, 114, 0.1);
+  color: #666;
 }

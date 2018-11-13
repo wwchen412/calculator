@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-
+import { ExportNumService } from '../export-num.service';
 @Component({
   selector: 'app-calculator-output',
   templateUrl: './calculator-output.component.html',
@@ -9,7 +9,10 @@ export class CalculatorOutputComponent implements OnInit {
 
   @Input()
   exportNum;
-  constructor() { }
+
+  constructor(public exportsvc: ExportNumService) {
+    this.exportsvc = exportsvc;
+   }
 
   ngOnInit() {
   }

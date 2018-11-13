@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { ExportNumService } from '../export-num.service';
 
 @Component({
   selector: 'app-calculator-input',
@@ -7,11 +8,23 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CalculatorInputComponent implements OnInit {
 
-  @Input() doNum;
+  @Input()
+  exportNum: string;
 
-  constructor() { }
+  @Output()
+  sendNum = new EventEmitter<string>();
+
+  constructor(public exportsvc: ExportNumService) {
+    this.exportsvc = exportsvc;
+   }
+
 
   ngOnInit() {
+
+
+  }
+  emitSendNum($event) {
+    this.exportsvc.countNum();
   }
 
 }

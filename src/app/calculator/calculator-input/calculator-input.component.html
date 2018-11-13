@@ -2,61 +2,61 @@
  <div class="count-input">
   <ul class="buttons">
     <li>
-      <div class="button" (click)="clearNum()">AC</div>
+      <div class="button" [ngClass]="{'onclick': onclick}" (click)="exportsvc.clearNum()">AC</div>
     </li>
     <li>
-      <div class="button">+/-</div>
+      <div class="button" (click)="exportsvc.negative()">+/-</div>
     </li>
     <li>
-      <div class="button">%</div>
+      <div class="button" (click)="exportsvc.percent()">%</div>
     </li>
     <li>
-      <div class="button" (click)="calculate('/')">/</div>
+      <div class="button" (click)="exportsvc.calculate('/')">/</div>
     </li>
     <li>
-      <div class="button" (click)="doNum('7')">7</div>
+      <div class="button" (click)="exportsvc.doNum('7')">7</div>
     </li>
     <li>
-      <div class="button" (click)="doNum('8')">8</div>
+      <div class="button" (click)="exportsvc.doNum('8')">8</div>
     </li>
     <li>
-      <div class="button" (click)="doNum('9')">9</div>
+      <div class="button" (click)="exportsvc.doNum('9')">9</div>
     </li>
     <li>
-      <div class="button" (click)="calculate('*')">*</div>
+      <div class="button" (click)="exportsvc.calculate('*')">*</div>
     </li>
     <li>
-      <div class="button" (click)="doNum('4')">4</div>
+      <div class="button" (click)="exportsvc.doNum('4')">4</div>
     </li>
     <li>
-      <div class="button" (click)="doNum('5')">5</div>
+      <div class="button" (click)="exportsvc.doNum('5')">5</div>
     </li>
     <li>
-      <div class="button" (click)="doNum('6')">6</div>
+      <div class="button" (click)="exportsvc.doNum('6')">6</div>
     </li>
     <li>
-      <div class="button" (click)="calculate('-')">-</div>
+      <div class="button" (click)="exportsvc.calculate('-')">-</div>
     </li>
     <li>
-      <div class="button" (click)="doNum('1')">1</div>
+      <div class="button" (click)="exportsvc.doNum('1')">1</div>
     </li>
     <li>
-      <div class="button" (click)="doNum('2')">2</div>
+      <div class="button" (click)="exportsvc.doNum('2')">2</div>
     </li>
     <li>
-      <div class="button" (click)="doNum('3')">3</div>
+      <div class="button" (click)="exportsvc.doNum('3')">3</div>
     </li>
     <li>
-      <div class="button" (click)="calculate('+')">+</div>
+      <div class="button" (click)="exportsvc.calculate('+')">+</div>
     </li>
     <li>
-      <div class="button" (click)="doNum('0')">0</div>
+      <div class="button" (click)="exportsvc.doNum('0')">0</div>
     </li>
     <li>
-      <div class="button">.</div>
+      <div class="button" (click)="exportsvc.doNum('.')">.</div>
     </li>
     <li>
-      <div class="button" (click)="total()">=</div>
+      <div class="button" (click)="exportsvc.total()">=</div>
     </li>
   </ul>
 </div>
